@@ -9,7 +9,4 @@ export class NamesService {
 
   constructor(private http: HttpClient) { }
 
-  getNames () {
-    return this.http.get<Name[]>('http://localhost/test/namelist.php');
-  }
 }

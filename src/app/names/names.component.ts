@@ -9,16 +9,9 @@ import {Router} from '@angular/router';
   styleUrls: ['./names.component.css']
 })
 export class NamesComponent implements OnInit {
-  names: Name[];
-  constructor(private  _nameService: NamesService,
-              private router: Router) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this._nameService.getNames()
-      .subscribe((data: Name[]) => {
-        this.names = data;
-        console.log(this.names);
-      });
   }
 
 }
