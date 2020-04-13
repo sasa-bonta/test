@@ -1,0 +1,20 @@
+<p>names works!</p>
+
+<div class="row std-list">
+  <div class="col-sm-6 bg-transparent">
+    <h2 align="center">ID:</h2>
+  </div>
+  <div class="col-sm-6 bg-transparent">
+    <h2>Name:</h2>
+  </div >
+</div>
+
+<div class="row std-list" *ngFor="let num of names">
+  <div class="col-sm-6 bg-transparent">
+    <p align="center">{{num.id}}</p>
+  </div>
+  <div class="col-sm-6 bg-transparent">
+    {{num.name}}
+  </div >
+  <div><br><br></div>
+</div>
